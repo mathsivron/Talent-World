@@ -7,7 +7,7 @@ async function build() {
   await rm(outputDirectory, { force: true, recursive: true });
   await mkdir(outputDirectory, { recursive: true });
   await copyFile(
-    join(process.cwd(), 'Showroom-SPLIT-Improved.html'),
+    join(process.cwd(), 'index.html'),
     join(outputDirectory, 'index.html'),
   );
 }
